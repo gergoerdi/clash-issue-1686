@@ -70,20 +70,14 @@ source-dirs: src
 
 executables:
   exe1:
-    main: cpu-textscreen-verilator.hs
-    dependencies:
-      - retroclash-sim
-      - terminal
+    main: main.hs
     verbatim:
       x-clashilator-top-is: Hardware.Compucolor2
       x-clashilator-entity: simEntity
       x-clashilator-clock: CLK_40MHZ
 
   exe2:
-    main: cpu-textscreen-verilator.hs
-    dependencies:
-      - retroclash-sim
-      - terminal
+    main: main.hs
     verbatim:
       x-clashilator-top-is: Hardware.Compucolor2
       x-clashilator-entity: simEntity
