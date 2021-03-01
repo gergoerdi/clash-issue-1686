@@ -13,18 +13,6 @@ dependencies:
   - ghc-typelits-extra
   - ghc-typelits-knownnat
 
-  # - bytestring
-  # - mtl
-  # - transformers
-  # - array
-  # - lens
-  # - barbies
-  # - barbies-th
-  # - tuple
-  # - split
-  # - extra
-  # - template-haskell
-
 # Anything that Clash uses by default should go here
 default-extensions:
   - BinaryLiterals
@@ -65,13 +53,13 @@ executables:
   exe1:
     main: main.hs
     verbatim:
-      x-clashilator-top-is: Hardware.Compucolor2
+      x-clashilator-top-is: Board
       x-clashilator-entity: simEntity
       x-clashilator-clock: CLK_40MHZ
 
   exe2:
     main: main.hs
     verbatim:
-      x-clashilator-top-is: Hardware.Compucolor2
+      x-clashilator-top-is: Board
       x-clashilator-entity: simEntity
       x-clashilator-clock: CLK_40MHZ

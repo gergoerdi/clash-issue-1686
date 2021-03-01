@@ -1,12 +1,8 @@
-{-# LANGUAGE NumericUnderscores, RecordWildCards #-}
-module Hardware.Compucolor2
-    ( simEntity
-    , VidAddr
-    ) where
+module Board where
 
 import Clash.Prelude
 import Clash.Annotations.TH
-import Hardware.Compucolor2.Video
+import Lib
 
 simEntity
     :: "CLK_40MHZ"    ::: Clock Dom40

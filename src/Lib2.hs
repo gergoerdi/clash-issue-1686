@@ -1,4 +1,4 @@
-module Hardware.Compucolor2.Video.Plot where
+module Lib2 where
 
 import Clash.Prelude
 

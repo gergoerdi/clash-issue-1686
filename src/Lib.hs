@@ -1,16 +1,8 @@
 {-# LANGUAGE NumericUnderscores #-}
-module Hardware.Compucolor2.Video
-    ( Dom40
-    , TextWidth
-    , TextHeight
-    , FontWidth
-    , FontHeight
-    , VidAddr
-    , plotRom
-    ) where
+module Lib where
 
 import Clash.Prelude
-import Hardware.Compucolor2.Video.Plot
+import Lib2
 import qualified Language.Haskell.TH.Syntax as TH
 
 type TextWidth = 64

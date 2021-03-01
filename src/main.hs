@@ -1,6 +1,6 @@
 import Clash.Prelude
 import Clash.Clashilator.FFI
-import Hardware.Compucolor2.Video
+import Lib
 
 main :: IO ()
 main = return ()
