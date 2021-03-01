@@ -66,22 +66,20 @@ ghc-options:
   -fplugin GHC.TypeLits.Normalise
   -fplugin GHC.TypeLits.Extra.Solver
 
+source-dirs: src
+
 executables:
-  compucolor2-cpu-screen-verilator:
-    source-dirs:
-      - src
-    main: cpu-screen-verilator.hs
+  exe1:
+    main: cpu-textscreen-verilator.hs
     dependencies:
       - retroclash-sim
-      - sdl2
+      - terminal
     verbatim:
       x-clashilator-top-is: Hardware.Compucolor2
       x-clashilator-entity: simEntity
       x-clashilator-clock: CLK_40MHZ
 
-  compucolor2-cpu-textscreen-verilator:
-    source-dirs:
-      - src
+  exe2:
     main: cpu-textscreen-verilator.hs
     dependencies:
       - retroclash-sim
