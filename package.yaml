@@ -15,7 +15,6 @@ dependencies:
 
   - retroclash-lib
   - retroclash-sim
-  - clash-shake
   - intel8080
 
   - sdl2
