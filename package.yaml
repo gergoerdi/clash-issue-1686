@@ -71,7 +71,6 @@ executables:
   compucolor2-cpu-screen-verilator:
     source-dirs:
       - src
-      - sim
     main: cpu-screen-verilator.hs
     dependencies:
       - retroclash-sim
@@ -84,7 +83,6 @@ executables:
   compucolor2-cpu-textscreen-verilator:
     source-dirs:
       - src
-      - sim
     main: cpu-textscreen-verilator.hs
     dependencies:
       - retroclash-sim
