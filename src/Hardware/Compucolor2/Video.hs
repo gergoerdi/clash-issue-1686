@@ -1,7 +1,8 @@
-{-# LANGUAGE NumericUnderscores, RecordWildCards, ViewPatterns #-}
-{-# LANGUAGE ApplicativeDo #-}
+{-# LANGUAGE NumericUnderscores #-}
 module Hardware.Compucolor2.Video
     ( Dom40
+    , TextWidth
+    , TextHeight
     , FontWidth
     , FontHeight
     , VidAddr
@@ -12,13 +13,14 @@ import Clash.Prelude
 import qualified Clash.Signal.Delayed.Bundle as D
 import RetroClash.Utils
 
-import Hardware.Compucolor2.CRT5027 as CRT5027
 import Hardware.Compucolor2.Video.Plot
 
 import Control.Monad
 import Data.Maybe (isJust, isNothing, fromMaybe)
 import qualified Language.Haskell.TH.Syntax as TH
 
+type TextWidth = 64
+type TextHeight = 32
 type TextSize = TextWidth * TextHeight
 type VidSize = TextSize * 2
 type VidAddr = Index VidSize
