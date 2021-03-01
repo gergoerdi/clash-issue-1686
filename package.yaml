@@ -4,8 +4,12 @@ custom-setup:
   dependencies:
     - base
     - Cabal
-    - clashilator
+    - lens
+    - filepath
 
+    - clash-lib
+    - clash-ghc
+    
 dependencies:
   - base >= 4.7 && < 5
   - clash-prelude
