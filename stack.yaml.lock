@@ -78,47 +78,6 @@ packages:
       sha256: c6ce7634d9f6dfa46748601ada0b7df4b6708c255e59245b544cf23df2fac3fa
   original:
     hackage: tasty-hedgehog-1.0.1.0
-- completed:
-    hackage: barbies-2.0.2.0@sha256:fa6656b45c40f7d4ab1764d078c6878f37d37fab7f7135c061e9a5baa67943c0,4407
-    pantry-tree:
-      size: 4426
-      sha256: 5aa3ff178fe56b21250543384e8482de13f35ef57a06943178382b0f2e3eca24
-  original:
-    hackage: barbies-2.0.2.0
-- completed:
-    hackage: barbies-th-0.1.7@sha256:b3700ac28d5bdee9a28ed58fe1a91f6e512ed14cd5cebb032cc3d84071253383,1085
-    pantry-tree:
-      size: 427
-      sha256: 3896504873a0eb5d1bebc9528a67778869cdbc6899585518e86a917a5cf65421
-  original:
-    hackage: barbies-th-0.1.7
-- completed:
-    hackage: monad-supply-0.9@sha256:4326f7e5fb93c471cb9ac9bc4be738ea3f7f77052bff2d7ebdf7e05172623284,1249
-    pantry-tree:
-      size: 272
-      sha256: 875719dcef5e614d5f029e26ad617f7f9f20777b98dbee8d8ca3e48d3ff5a81f
-  original:
-    hackage: monad-supply-0.9
-- completed:
-    hackage: terminal-0.2.0.0@sha256:de6770ecaae3197c66ac1f0db5a80cf5a5b1d3b64a66a05b50f442de5ad39570,2977
-    pantry-tree:
-      size: 1775
-      sha256: 54160663bf0cbcd1d9fa52e136740faaf91a82d1ca1efeb08e8e58575a7446e7
-  original:
-    hackage: terminal-0.2.0.0
-- completed:
-    size: 24901
-    subdir: smash-core
-    url: https://github.com/emilypi/smash/archive/bd3ae30bdfef3f92ce5575a1ee10228830afa11b.tar.gz
-    name: smash
-    version: 0.1.2.0
-    sha256: ba4f9b240b264d28633395a538c16b38d43de1677a8dc8eb5abf1ee649a6739f
-    pantry-tree:
-      size: 598
-      sha256: 9510eb772e7b5b81ebc834fbfb6aa69dfa5b910642b1e1579b1f1c84dc9f5739
-  original:
-    subdir: smash-core
-    url: https://github.com/emilypi/smash/archive/bd3ae30bdfef3f92ce5575a1ee10228830afa11b.tar.gz
 snapshots:
 - completed:
     size: 563099

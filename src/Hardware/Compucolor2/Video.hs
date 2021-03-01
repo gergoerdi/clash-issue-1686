@@ -11,7 +11,6 @@ module Hardware.Compucolor2.Video
 
 import Clash.Prelude
 import qualified Clash.Signal.Delayed.Bundle as D
-import RetroClash.Utils
 
 import Hardware.Compucolor2.Video.Plot
 
