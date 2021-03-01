@@ -1,4 +1,4 @@
-name: clash-HEAD
+name: clash-ghc-8.10
 resolver: lts-17.2
 
 packages:

@@ -1,4 +1,4 @@
-resolver: clash-HEAD.yaml
+resolver: clash-ghc-8.10.yaml
 
 packages:
   - .
