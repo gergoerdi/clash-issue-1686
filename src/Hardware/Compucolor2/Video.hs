@@ -10,12 +10,7 @@ module Hardware.Compucolor2.Video
     ) where
 
 import Clash.Prelude
-import qualified Clash.Signal.Delayed.Bundle as D
-
 import Hardware.Compucolor2.Video.Plot
-
-import Control.Monad
-import Data.Maybe (isJust, isNothing, fromMaybe)
 import qualified Language.Haskell.TH.Syntax as TH
 
 type TextWidth = 64
