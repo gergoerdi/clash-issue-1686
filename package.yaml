@@ -1,0 +1,95 @@
+name: clash-issue1686
+
+custom-setup:
+  dependencies:
+    - base
+    - Cabal
+    - clashilator
+
+dependencies:
+  - base >= 4.7 && < 5
+  - clash-prelude
+  - ghc-typelits-natnormalise
+  - ghc-typelits-extra
+  - ghc-typelits-knownnat
+
+  - retroclash-lib
+  - retroclash-sim
+  - clash-shake
+  - intel8080
+
+  - sdl2
+  - terminal
+
+  - bytestring
+  - mtl
+  - transformers
+  - array
+  - lens
+  - barbies
+  - barbies-th
+  - tuple
+  - split
+  - extra
+  - template-haskell
+
+# Anything that Clash uses by default should go here
+default-extensions:
+  - BinaryLiterals
+  - ConstraintKinds
+  - DataKinds
+  - DeriveAnyClass
+  - DeriveGeneric
+  - DeriveLift
+  - DerivingStrategies
+  - ExplicitForAll
+  - ExplicitNamespaces
+  - FlexibleContexts
+  - FlexibleInstances
+  - KindSignatures
+  - MagicHash
+  - MonoLocalBinds
+  - NoImplicitPrelude
+  - NoStarIsType
+  - NoStrictData
+  - NoStrict
+  - QuasiQuotes
+  - ScopedTypeVariables
+  - TemplateHaskellQuotes
+  - TemplateHaskell
+  - TypeApplications
+  - TypeFamilies
+  - TypeOperators
+
+ghc-options:
+  -fexpose-all-unfoldings -fno-worker-wrapper
+  -fplugin GHC.TypeLits.KnownNat.Solver
+  -fplugin GHC.TypeLits.Normalise
+  -fplugin GHC.TypeLits.Extra.Solver
+
+executables:
+  compucolor2-cpu-screen-verilator:
+    source-dirs:
+      - src
+      - sim
+    main: cpu-screen-verilator.hs
+    dependencies:
+      - retroclash-sim
+      - sdl2
+    verbatim:
+      x-clashilator-top-is: Hardware.Compucolor2
+      x-clashilator-entity: simEntity
+      x-clashilator-clock: CLK_40MHZ
+
+  compucolor2-cpu-textscreen-verilator:
+    source-dirs:
+      - src
+      - sim
+    main: cpu-textscreen-verilator.hs
+    dependencies:
+      - retroclash-sim
+      - terminal
+    verbatim:
+      x-clashilator-top-is: Hardware.Compucolor2
+      x-clashilator-entity: simEntity
+      x-clashilator-clock: CLK_40MHZ
